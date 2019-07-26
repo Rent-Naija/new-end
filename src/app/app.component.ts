@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularnaija';
+
+  /**
+   *
+   */
+  constructor(private pageTitle: Title) {
+    this.pageTitle.setTitle('RentNaija| Welcome to RentNaija');
+  }
+
 }
