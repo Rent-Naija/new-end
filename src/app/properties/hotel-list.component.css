@@ -1,0 +1,13 @@
+[class="col-sm-8"] {
+  background-color:#ecf0f1;
+  margin: 20px 0 0 0;
+  padding-top:10px;
+  padding-bottom:70px
+  }
+ [class="col-sm-3"] {
+  margin: 20px 10px 0 10px;
+  padding-top:10px;
+  padding-bottom:70px;
+  border: 1px solid #172A3A;
+  }
+
