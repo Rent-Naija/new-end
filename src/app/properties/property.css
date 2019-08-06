@@ -1,0 +1,33 @@
+.card {
+  width:16rem
+}
+
+.btn-default-NG{
+  background-color: #36465d;
+  color:#ffffff;
+  border-color: #2F3E48;
+}
+.btn-default-NG:visited{
+  background-color: #36465d;
+  color:#ffffff;
+  border-color: #2F3E48;
+}
+.btn-default-NG:hover{
+  background-color: #36465d;
+  color: #cff2b8;
+  border-color: #2F3E48;
+}
+[class="col-sm-8"] {
+  background-color:#ecf0f1;
+  margin: 20px 0 0 0;
+  padding-top:10px;
+  padding-bottom:70px
+  }
+ [class="col-sm-3"] {
+  margin: 20px 10px 0 10px;
+  padding-top:10px;
+  padding-bottom:70px;
+  border: 1px solid #172A3A;
+  max-height: 500px;
+  }
+
