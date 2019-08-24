@@ -1,0 +1,44 @@
+.card {
+  width:16rem
+}
+[plus-sign] {
+font-size: 100px;
+}
+[plus-sign]:hover {
+font-size: 100px;
+text-decoration: none;
+}
+.btn-default-NG{
+background-color: #36465d;
+color:#ffffff;
+border-color: #2F3E48;
+}
+.btn-default-NG:visited{
+background-color: #36465d;
+color:#ffffff;
+border-color: #2F3E48;
+}
+.btn-default-NG:hover{
+background-color: #36465d;
+color: #cff2b8;
+border-color: #2F3E48;
+}
+[class="col-sm-8"] {
+background-color:#f8f9fa;
+margin: 20px 0 0 0;
+padding-top:10px;
+padding-bottom:70px
+}
+[class="col-sm-3"] {
+margin: 20px 10px 0 10px;
+padding-top:10px;
+padding-bottom:70px;
+max-height: 500px;
+
+}
+.list-group > a.active {
+    background: #f8f9fa;
+    border: 1px solid #DDDDDD;
+    color: black;
+    font-weight: bold;
+}

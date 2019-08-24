@@ -15,7 +15,7 @@ const httpOptions = {
 export class PropertyService {
   // private _url = "http://rentnaija.ng/api";
   // private _url = "http://rentapi.localhost/api";
-  private _url = "http://rentapi.localhost/api";
+  private _url = "http://rentapi.localhost:8080/api";
   /**
    *
    */
@@ -24,16 +24,16 @@ export class PropertyService {
     return this.http.get<any>(this._url + '/properties/hostel');
   }
 
-  getViewid(viewid: string): Observable<Iproperty>{
-    return this.http.get<Iproperty>(this._url + '/propertyview/' + viewid);
-  }
-
   getHotels(): Observable<any>{
     return this.http.get<any>(this._url + '/properties/hotel');
   }
 
   getrents(): Observable<any>{
     return this.http.get<any>(this._url + '/properties/rent');
+  }
+
+  getViewid(viewid: string): Observable<Iproperty>{
+    return this.http.get<Iproperty>(this._url + '/propertyview/' + viewid);
   }
 
   searchHostels(state: any): Observable<Iproperty[]>{
@@ -47,8 +47,6 @@ export class PropertyService {
   searchRent(state: any, city: any, price: any): Observable<Iproperty[]>{
     return this.http.get<Iproperty[]>(this._url + '/house/' + state + '/'  + city + '/'  + price);
   }
-
-
 
   getproperties(type: any, propertyid: number): Observable<any>{
    return this.http.get<any>(this._url + '/' + type + '/'  + propertyid);

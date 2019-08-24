@@ -1,5 +1,5 @@
-import { Component, OnInit, OnChanges, Input, Output } from '@angular/core';
-import { EventEmitter } from 'events';
+import { Component, OnInit, OnChanges, Input, Output, EventEmitter } from '@angular/core';
+// import { EventEmitter } from 'events';
 
 @Component({
   selector: 'app-subproperties',
@@ -8,8 +8,14 @@ import { EventEmitter } from 'events';
 })
 export class SubpropertiesComponent implements OnChanges {
   @Input() _subproperty: any;
+  @Output() eventClick = new EventEmitter();
 
   constructor() {
+   }
+
+   handleClickMe() {
+    //  console.log("am beau")
+    this.eventClick.emit('foo');
    }
 
   ngOnChanges(): void {

@@ -1,1 +1,33 @@
-<p>hostel-list works!</p>
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-3">
+        <h4>Quick Search</h4>
+  </div>
+  <div class="col-sm-8" >
+      <h4>Search Result</h4>
+      <div *ngFor="let p of hostels">
+        <div class="card">
+          <img class="card-img-top" [src]="imageUrl+p.coverphoto" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <div *ngFor="let sub of subproperties" class="card-text">
+                <div *ngIf="p.id === +sub.propertyid">
+                  <app-subproperties [_subproperty]="sub" (eventClick)="handleEventClick($event)"></app-subproperties>
+
+                </div>
+            </div>
+            <h5 class="card-content text-center">
+              &#8358;{{p.price | number}}
+            </h5>
+            <a href="#" class="btn btn-default-NG btn-block">See Profile</a>
+          </div>
+        </div>
+
+      </div>
+
+
+  </div>
+</div>
+</div>
+

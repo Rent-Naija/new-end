@@ -31,3 +31,9 @@ background-color: #172A3A;
 color: #FFFFFF;
 font-weight: bold;
 }
+
+[size="lg"] {
+  font-size: 40px;
+  color: white;
+  stroke: #172A3A;
+}
