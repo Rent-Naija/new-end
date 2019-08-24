@@ -1,0 +1,20 @@
+<div class="alert alert-success">
+  <strong>Success!</strong> {{ remainDate }}
+</div>
+<div class="row text-center">
+  <a [routerLink]="['/tenant']" class="col" my-profile>
+    <fa-icon icon="user-circle" size="lg"></fa-icon>
+    <br />
+    My Profile
+  </a>
+  <a [routerLink]="['/myrent']" class="col" my-landlord>
+    <fa-icon icon="building" size="lg"></fa-icon>
+    <br />
+    Your Property
+  </a>
+  <a [routerLink]="['/myfavourite']" class="col" my-favourite>
+    <fa-icon icon="heart" size="lg"></fa-icon>
+    <br />
+    My Favourite
+  </a>
+</div>

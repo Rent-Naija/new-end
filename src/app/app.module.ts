@@ -38,6 +38,9 @@ import { PropertyDetailComponent } from './properties/property-detail.component'
 import { TenantComponent } from './tenants/tenant.component';
 import { SubpropertiesComponent } from './shared/subproperties.component';
 import { DashboardComponent } from './admin/dashboard.component';
+import { PropertyrentComponent } from './tenants/propertyrent.component';
+import { MenuComponent } from './tenants/menu.component';
+import { MyfavouriteComponent } from './tenants/myfavourite.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +51,9 @@ import { DashboardComponent } from './admin/dashboard.component';
     TenantComponent,
     SubpropertiesComponent,
     DashboardComponent,
+    PropertyrentComponent,
+    MenuComponent,
+    MyfavouriteComponent,
 
   ],
   imports: [
@@ -72,6 +78,14 @@ import { DashboardComponent } from './admin/dashboard.component';
       {
         path: 'tenant',
         component: TenantComponent
+      },
+      {
+        path: 'myrent',
+        component: PropertyrentComponent
+      },
+      {
+        path: 'myfavourite',
+        component: MyfavouriteComponent
       },
       {
         path: 'dashboard',

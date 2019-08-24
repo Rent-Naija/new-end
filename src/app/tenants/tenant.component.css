@@ -30,6 +30,7 @@ padding-top:20px;
 background-color: #172A3A;
 color: #FFFFFF;
 font-weight: bold;
+text-decoration-line: none;
 }
 
 [size="lg"] {
@@ -37,3 +38,4 @@ font-weight: bold;
   color: white;
   stroke: #172A3A;
 }
+
