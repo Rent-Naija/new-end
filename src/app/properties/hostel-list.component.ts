@@ -6,13 +6,13 @@ import { Schools } from '../shared/schools';
 @Component({
   selector: 'app-hostel-list',
   templateUrl: './hostel-list.component.html',
-  styleUrls: ['./hostel-list.component.css']
+  styleUrls: ['./property.css']
 })
 export class HostelListComponent implements OnInit {
   hostels: [];
   filteredhostels: [];
   subproperties: [];
-  imageUrl: string = "http://rentapi.localhost/storage/cover_Images/";
+  imageUrl: string = "http://rentapi.localhost:8080/storage/cover_Images/";
 
   constructor(
               private propertyService: PropertyService,
