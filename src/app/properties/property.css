@@ -1,26 +1,22 @@
-/* css variables */
-:root {
-  --rent-border-color: #2F3E48;
-  --rent-background-color: #36465d;
-}
+
 .card {
   width:16rem
 }
 
 .btn-default-NG{
-  background-color: var(--rent-background-color);
+  background-color: #36465d;
   color:#ffffff;
-  border-color: var(--rent-border-color);
+  border-color: #2F3E48;
 }
 .btn-default-NG:visited{
-  background-color: var(--rent-background-color);
+  background-color: #36465d;
   color:#ffffff;
-  border-color: var(--rent-border-color);
+  border-color: #2F3E48;
 }
 .btn-default-NG:hover{
-  background-color: var(--rent-background-color);
+  background-color: #36465d;
   color: #cff2b8;
-  border-color: var(--rent-border-color);
+  border-color: #2F3E48;
 }
 [class="col-sm-8"] {
   background-color:#ecf0f1;

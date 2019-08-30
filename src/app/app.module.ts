@@ -76,6 +76,10 @@ import { MyfavouriteComponent } from './tenants/myfavourite.component';
         component: HotelListComponent
       },
       {
+        path: 'p/:type/:id',
+        component: PropertyDetailComponent
+      },
+      {
         path: 'tenant',
         component: TenantComponent
       },
