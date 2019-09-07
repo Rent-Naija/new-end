@@ -1,4 +1,41 @@
-<p>property-detail works!</p>
 <div class="row" style="margin-left:3px;margin-top:10px;" *ngFor="let p of property ">
-  {{p.name}}
+  <div class="col-sm-12">
+    <span *ngIf="p.state"><fa-icon icon="map-marker"></fa-icon>&nbsp; {{p.state}}
+      <h3>{{p.name}}</h3></span>
+    <div><fa-icon icon="map-marker"></fa-icon>&nbsp; {{p.city}}</div>
+
+
+    <div *ngIf="availablesubp">
+      <app-available-sub-property [availablesubp]="availablesubp"></app-available-sub-property>
+
+    </div>
+
+    <app-like-button [favtotal]="favourites"></app-like-button>
+    <br />
+
+ <div style="border-top: 2px solid black;border-bottom: 2px solid black">
+  <b style="font-size: 20px">About This Space</b>
+
+  <div style="padding-top: 5px;">
+      <b>Address</b>
+      <p>{{p.address}}</p>
+  </div>
+  <div style="padding-top: 5px;">
+      <b>Property Description</b>
+      <p>{{p.description}}</p>
+      <p>Updated {{p.updated_at | date}}, Added {{p.created_at | date}}</p>
+  </div>
+</div>
+
+<div style="border-bottom: 2px solid black">
+<b>{{p.type}} Details</b>
+      <app-sub-properties-list [subpropertieslist]="subpropertieslist"
+      [p_id]="p.id"></app-sub-properties-list>
+</div><br />
+<app-key-places [moreinfo]="moreinfo"></app-key-places>
+<br />
+
+</div>
+
+
 </div>
