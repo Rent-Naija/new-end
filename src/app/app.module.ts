@@ -41,6 +41,10 @@ import { DashboardComponent } from './admin/dashboard.component';
 import { PropertyrentComponent } from './tenants/propertyrent.component';
 import { MenuComponent } from './tenants/menu.component';
 import { MyfavouriteComponent } from './tenants/myfavourite.component';
+import { LikeButtonComponent } from './properties/like-button.component';
+import { KeyPlacesComponent } from './properties/key-places.component';
+import { SubPropertiesListComponent } from './properties/sub-properties-list.component';
+import { AvailableSubPropertyComponent } from './properties/available-sub-property.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +58,10 @@ import { MyfavouriteComponent } from './tenants/myfavourite.component';
     PropertyrentComponent,
     MenuComponent,
     MyfavouriteComponent,
+    LikeButtonComponent,
+    KeyPlacesComponent,
+    SubPropertiesListComponent,
+    AvailableSubPropertyComponent,
 
   ],
   imports: [
