@@ -45,6 +45,11 @@ import { LikeButtonComponent } from './properties/like-button.component';
 import { KeyPlacesComponent } from './properties/key-places.component';
 import { SubPropertiesListComponent } from './properties/sub-properties-list.component';
 import { AvailableSubPropertyComponent } from './properties/available-sub-property.component';
+import { LeftMenuComponent } from './admin/left-menu.component';
+import { NavBarComponent } from './shared/nav-bar.component';
+import { ProfileComponent } from './admin/profile.component';
+import { MybankComponent } from './admin/mybank.component';
+import { MyfavComponent } from './admin/myfav.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +67,11 @@ import { AvailableSubPropertyComponent } from './properties/available-sub-proper
     KeyPlacesComponent,
     SubPropertiesListComponent,
     AvailableSubPropertyComponent,
+    LeftMenuComponent,
+    NavBarComponent,
+    ProfileComponent,
+    MybankComponent,
+    MyfavComponent,
 
   ],
   imports: [
@@ -102,6 +112,18 @@ import { AvailableSubPropertyComponent } from './properties/available-sub-proper
       {
         path: 'dashboard',
         component: DashboardComponent
+      },
+      {
+        path: 'myfav',
+        component: MyfavComponent
+      },
+      {
+        path: 'mybank',
+        component: MybankComponent
+      },
+      {
+        path: 'myprofile',
+        component: ProfileComponent
       }
     ])
   ],
