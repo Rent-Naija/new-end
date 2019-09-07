@@ -1,0 +1,47 @@
+<p>key-places works!</p>
+<div  style="padding-bottom:10px;border-bottom: 2px solid black">
+    <b style="font-size: 20px">Key Places</b>
+
+    <div *ngFor="let m of moreinfo">
+        <span *ngIf="m.hospital > 0" style="padding-right: 30px;">
+            <fa-icon icon="check-circle"></fa-icon>
+            Hospital
+        </span>
+        <span *ngIf="m.security > 0" style="padding-right: 30px;">
+          <fa-icon icon="check-circle"></fa-icon>
+          Security
+      </span>
+      <span *ngIf="m.goffice > 0" style="padding-right: 30px;">
+        <fa-icon icon="check-circle"></fa-icon>
+        Government Office
+      </span>
+      <span *ngIf="m.church > 0" style="padding-right: 30px;">
+        <fa-icon icon="check-circle"></fa-icon>
+        Church
+      </span>
+      <span *ngIf="m.mosque > 0" style="padding-right: 30px;">
+        <fa-icon icon="check-circle"></fa-icon>
+        Mosque
+      </span>
+      <span *ngIf="m.gymcenter > 0" style="padding-right: 30px;">
+        <fa-icon icon="check-circle"></fa-icon>
+        Gym Center
+      </span>
+      <span *ngIf="m.hairsaloon > 0" style="padding-right: 30px;">
+        <fa-icon icon="check-circle"></fa-icon>
+        Hair Saloon
+      </span>
+      <span *ngIf="m.resturant > 0" style="padding-right: 30px;">
+        <fa-icon icon="check-circle"></fa-icon>
+        Resturant
+      </span>
+      <span *ngIf="m.hotel > 0" style="padding-right: 30px;">
+        <fa-icon icon="check-circle"></fa-icon>
+        Hotel
+      </span>
+      <span *ngIf="m.market > 0" style="padding-right: 30px;">
+        <fa-icon icon="check-circle"></fa-icon>
+        Market
+      </span>
+    </div>
+    </div>
